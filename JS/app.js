@@ -1,58 +1,39 @@
-' use strict';
+// ' use strict';
 
 let username = prompt('What is your name?');
 console.log('the user\'s name is ' + username)
 
-alert('Hi ' + username + '!')
+alert('Hi ' + username + '! Welcome to my Guessing Game!')
+alert( 'Let\'s see how well you can guess info about me!')
 
-const techie = prompt('Do you work in the tech industry?');
-switch (techie) {
-case 'yes' : 
-    console.log ( 'the user said ' + techie + ' to working in the tech industry')
-    alert('That is awesome ' + username + '!')
-case 'no' :
-    console.log ( 'the user does not work in the tech field')
-    alert('You definitely should ' + username + '!')
-}
-
-let phone = prompt('Do you own an iPhone?')
-switch (phone) {
-    case 'yes' :
-            console.log ('the user said' + phone + ' to having an iPhone.')
-            alert('Great! Androids suck.' )
-            break;
-    case 'no' : 
-            console.log ('the user said' + phone + ' to having an iPhone.') 
-            alert( 'Do better ' + username)
-        }
-
-let social = prompt('Do you have a Facebook account?')
-switch (social) {
-    case 'yes' :
-                console.log ('the user said' + social + ' to having Facebook.')
-                alert('I mean, who doesn\'t?' )
-                break;
-    case 'no' : 
-                console.log ('the user said' + social + ' to having Facebook.') 
-                alert( 'Wow, ' + username + ' you are a unicorn!')
-                }
-let hours = prompt('Do you spend more than 2 hours a day on social media?')
-switch (hours) {
-    case 'yes' :
-                console.log ('the user said' + hours + ' to spending more than 2 hours a day on social media.')
-                alert('No judgement here, friend.' )
-                break;
-    case 'no' : 
-                console.log ('the user said' + hours + ' to spending more than 2 hours a day on social media.') 
-                alert( 'Wow, you must have a life. Unlike me.')
-                }
-// let techie = true;
-// let techieTwo = false;
-
-// function techie {
-//     alert('That is awesome!')
-// }
-
-// function techieTwo {
-//     alert("Too bad, you should!")
-// }
+let city = prompt('Does Raven live in Nashville or Memphis?')
+    if (city.toLowerCase() === 'nashville') {
+    alert(' Correct! Country Music City!')
+    } else {
+        alert('That is incorrect, unfortunately.')
+    }
+let school = prompt('Did she graduate from the University of Memphis?')
+    if (school.toLowerCase() === 'yes') {
+    alert(' Correct! Go Tigers!')
+    } else {
+        alert('That is incorrect, unfortunately.')
+    }
+let job = prompt('Did she work for a radio station?')
+    if (job.toLowerCase() === 'no') {
+    alert(' Correct!')
+    } else {
+        alert('That is incorrect, I worked in TV News.')
+    }
+let tech = prompt('What year did she start Pivot Tech ?')
+    if (tech.toLowerCase() === '2020') {
+    alert(' Correct!')
+    } else {
+        alert('That is incorrect, unfortunately.')
+    }
+let news = prompt('Did she work for Good Morning America?')
+    if (news.toLowerCase() === 'no') {
+    alert(' Correct!!')
+    } else {
+        alert('That is incorrect, unfortunately.')
+    }
+        
