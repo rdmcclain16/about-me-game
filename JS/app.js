@@ -36,4 +36,21 @@ let news = prompt('Did she work for Good Morning America?')
     } else {
         alert('That is incorrect, unfortunately.')
     }
-        
+
+let i = 0;
+const answer = 3;
+let number = prompt('How many years have I worked at my current job? Please enter a number between 1-3.');
+    if (number < 3) {
+        alert('That is incorrect.')
+    } else {
+        alert('That is Correct!')
+    }
+
+
+let places = prompt(' Which of these places have I visted before: Aruba, Mexico or Morrocco?');
+if ( places.toUpperCase = 'Aruba || Morrocco') {
+    alert("Sorry, that is incorrect. I've never been there.")
+} else  {
+    alert('Correct!')
+}
+
