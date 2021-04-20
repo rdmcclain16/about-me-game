@@ -71,7 +71,6 @@ function ravenJobYears() {
 }
 function ravenTravel() {
   let answer2 = prompt(' Which of these places have I visted before: Mexico, Aruba, Ghana, Barbados, Santorini or Morrocco?');
-  let answer2 = ['Mexico, Aruba, Morrocco, Ghana, Barbados, Santorini'];
   let rightAnswer = 'Mexico';
   let i = 0;
 
@@ -80,6 +79,7 @@ function ravenTravel() {
       alert( 'Correct!');
       points++;
       alert('You scored ' + points + 'points total!');
+      break;
     } else {
       alert('That is incorrect');
       alert( `You have ${5-i} attempts left`);
@@ -87,7 +87,7 @@ function ravenTravel() {
     }
     i++;
   }
-}    
+}
 function main() {
   ravenCity();
   ravenSchool();
