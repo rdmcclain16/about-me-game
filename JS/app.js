@@ -1,204 +1,102 @@
-// ' use strict';
-
-//let username = prompt('What is your name?');
-//console.log('the user\'s name is ' + username)
-
-
-//alert('Hi ' + username + '! Welcome to my Guessing Game!')
-//alert( 'Let\'s see how well you can guess info about me!')
-
-
-//let points = 0;
-//let city = prompt('Does Raven live in Nashville or Memphis?')
-//    if (city.toLowerCase() === 'nashville') {
-//    alert(' Correct! Country Music City!')
-//    points++;
-//    alert('Total points: ' + points)
-//    } else {
-//        alert('That is incorrect, unfortunately.')
-//        alert('Total points: ' + points)
-//    }
-//let school = prompt('Did she graduate from the University of Memphis?')
-//    if (school.toLowerCase() === 'yes') {
-//    alert(' Correct! Go Tigers!')
-//    points++;
-//    alert('Total points: ' + points)
-//    } else {
-//        alert('That is incorrect, unfortunately.')
-//    }
-//let job = prompt('Did she work for a radio station?')
-//    if (job.toLowerCase() === 'no') {
-//    alert(' Correct!')
-//    points++;
-//    alert('Total points: ' + points)
-//    } else {
-//        alert('That is incorrect, I worked in TV News.')
-//        alert('Total points: ' + points)
-//    }
-//let tech = prompt('What year did she start Pivot Tech ?')
-//    if (tech.toLowerCase() === '2020') {
-//    alert(' Correct!')
-//    points++;
-//    alert('Total points: ' + points)
-//    } else {
-//        alert('That is incorrect, unfortunately.')
-//        alert('Total points: ' + points)
-//    }
-//let news = prompt('Did she work for Good Morning America?')
-//    if (news.toLowerCase() === 'no') {
-//    alert(' Correct!!')
-//    points++;
-//    alert('Total points: ' + points)
-//    } else {
-//        alert('That is incorrect, unfortunately.')
-//        alert('Total points: ' + points)
-//    }
-
-
-//const answer = 3;
-//let number = prompt('How many years have I worked at my current job? Please enter a number between 1-3.');
-//    if (number < 3) {
-//        alert('That is incorrect.')
-//        alert('Total points: ' + points)
-//    } else {
-//        alert('That is Correct!')
-//        points++;
-//        alert('Total points: ' + points)
-//    }
-    
-
-//let answer2 = prompt(' Which of these places have I visted before: Mexico, Aruba, Ghana, Barbados, Santorini or Morrocco?');
-//let places = ['Mexico, Aruba, Morrocco, Ghana, Barbados, Santorini'];
-//let rightAnswer = 'Mexico';
-//let i = 0;
-
-//while (i < 6) {
-//if (answer2.toUpperCase() !== rightAnswer) {
-//    alert( 'Correct!');
-//    points++;
-//    alert('You scored ' + points + 'points total!');
-//} else {
-//    alert('That is incorrect');
-//    alert( `You have ${5-i} attempts left`);
-//    answer2 = prompt('Which of these places have I visted before: Mexico, Aruba, Ghana, Barbados, Santorini or Morrocco?')
-//}
-//    i++
-//}
-
-//    alert('You scored ' + points + 'points total!');
-
-
-
-
-// for (i = 0; i < 4; i++);
-// if(places.toUpperCase() = 'Mexico') {
-// alert( 'That is correct!')
-// points++;
-// alert('Total points: ' + points)
-// } else {
-//     alert ('Nope. Never been.')
-//     alert('Total points: ' + points)
-// }
-
-// Question 1
-function whatCity () {    
+'use strict';
+let username = window.prompt('What is your name?');
+document.write('the user\'s name is ' + username);
+alert('Hi ' + username + '! Welcome to my Guessing Game!');
+alert('Let\'s see how well you can guess info about me!');
 let points = 0;
-let city = prompt('Does Raven live in Nashville or Memphis?');
-    if (city.toLowerCase() === 'nashville') {
-    alert(' Correct! Country Music City!')
+function ravenCity() {
+  let city = prompt('Does Raven live in Nashville or Memphis?');
+  if (city.toLowerCase() === 'nashville') {
+    alert(' Correct! Country Music City!');
     points++;
-    alert('Total points: ' + points)
-    } else {
-        alert('That is incorrect, unfortunately.')
-        alert('Total points: ' + points)
-    }
+    alert('Total points: ' + points);
+  } else {
+    alert('That is incorrect, unfortunately.');
+    alert('Total points: ' + points);
+  }
 }
-whatCity();
-// Question 2   
-function whatSchool() {
-let school = prompt('Did she graduate from the University of Memphis?');
-    if (school.toLowerCase() === 'yes') {
-    alert(' Correct! Go Tigers!')
+function ravenSchool () {
+  let school = prompt('Did she graduate from the University of Memphis?');
+  if (school.toLowerCase() === 'yes') {
+    alert(' Correct! Go Tigers!');
     points++;
-    alert('Total points: ' + points)
-    } else {
-        alert('That is incorrect, unfortunately.');
-    }
+    alert('Total points: ' + points);
+  } else {
+    alert('That is incorrect, unfortunately.');
+  }
 }
-whatSchool();
-// Question 3
-function whatJob() {
-let job = prompt('Did she work for a radio station?')
-    if (job.toLowerCase() === 'no') {
-    alert(' Correct!')
+function ravenJob () {
+  let job = prompt('Did she work for a radio station?');
+  if (job.toLowerCase() === 'no') {
+    alert(' Correct!');
     points++;
-    alert('Total points: ' + points)
-    } else {
-        alert('That is incorrect, I worked in TV News.')
-        alert('Total points: ' + points)
-    }
+    alert('Total points: ' + points);
+  } else {
+    alert('That is incorrect, I worked in TV News.');
+    alert('Total points: ' + points);
+  }
 }
-whatSchool();
-// Question 4
-function techYear() {    
-let tech = prompt('What year did she start Pivot Tech ?')
-    if (tech.toLowerCase() === '2020') {
-    alert(' Correct!')
+function ravenTech() {
+  let tech = prompt('What year did she start Pivot Tech ?');if (tech.toLowerCase() === '2020') {
+    alert(' Correct!');
     points++;
-    alert('Total points: ' + points)
-    } else {
-        alert('That is incorrect, unfortunately.')
-        alert('Total points: ' + points)
-    }
+    alert('Total points: ' + points);
+  } else {
+    alert('That is incorrect, unfortunately.');
+    alert('Total points: ' + points);
+  }
 }
-techYear();
-// Question 5
-function whatNews() {    
-let news = prompt('Did she work for Good Morning America?')
-    if (news.toLowerCase() === 'no') {
-    alert(' Correct!!')
+function ravenNews() {
+  let news = prompt('Did she work for Good Morning America?');
+  if (news.toLowerCase() === 'no') {
+    alert(' Correct!!');
     points++;
-    alert('Total points: ' + points)
-    } else {
-        alert('That is incorrect, unfortunately.')
-        alert('Total points: ' + points)
-    }
+    alert('Total points: ' + points);
+  } else {
+    alert('That is incorrect, unfortunately.');
+    alert('Total points: ' + points);
+  }
 }
-whatNews();
-// Question 6
-function jobYears() {
-const answer = 3;
-let number = prompt('How many years have I worked at my current job? Please enter a number between 1-3.');
-    if (number < 3) {
-        alert('That is incorrect.')
-        alert('Total points: ' + points)
-    } else {
-        alert('That is Correct!')
-        points++;
-        alert('Total points: ' + points)
-    }
+function ravenJobYears() {
+//   const answer = 3;
+  let answer = prompt('How many years have I worked at my current job? Please enter a number between 1-3.');
+  if (answer < 3) {
+    alert('That is incorrect.');
+    alert('Total points: ' + points);
+  } else {
+    alert('That is Correct!');
+    points++;
+    alert('Total points: ' + points);
+  }
 }
-jobYears();    
-// Question 7
-function travelCity() {
-let answer2 = prompt(' Which of these places have I visted before: Mexico, Aruba, Ghana, Barbados, Santorini or Morrocco?');
-let places = ['Mexico, Aruba, Morrocco, Ghana, Barbados, Santorini'];
-let rightAnswer = 'Mexico';
-let i = 0;
+function ravenTravel() {
+  let answer2 = prompt(' Which of these places have I visted before: Mexico, Aruba, Ghana, Barbados, Santorini or Morrocco?');
+  let answer2 = ['Mexico, Aruba, Morrocco, Ghana, Barbados, Santorini'];
+  let rightAnswer = 'Mexico';
+  let i = 0;
 
-while (i < 6) {
-if (answer2.toUpperCase() !== rightAnswer) {
-    alert( 'Correct!');
-    points++;
-    alert('You scored ' + points + 'points total!');
-} else {
-    alert('That is incorrect');
-    alert( `You have ${5-i} attempts left`);
-    answer2 = prompt('Which of these places have I visted before: Mexico, Aruba, Ghana, Barbados, Santorini or Morrocco?')
+  while (i < 6) {
+    if (answer2.toUpperCase() !== rightAnswer) {
+      alert( 'Correct!');
+      points++;
+      alert('You scored ' + points + 'points total!');
+    } else {
+      alert('That is incorrect');
+      alert( `You have ${5-i} attempts left`);
+      answer2 = prompt('Which of these places have I visted before: Mexico, Aruba, Ghana, Barbados, Santorini or Morrocco?');
+    }
+    i++;
+  }
+}    
+function main() {
+  ravenCity();
+  ravenSchool();
+  ravenJob();
+  ravenTech();
+  ravenNews();
+  ravenJobYears();
+  ravenTravel();
+  alert('You scored ' + points + 'points total!');
 }
-    i++
-}
-travelCity();
-    alert('You scored ' + points + 'points total!');
-}
+main();
 
